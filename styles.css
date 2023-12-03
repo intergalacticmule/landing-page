@@ -21,12 +21,15 @@ a {
     font-size: 23.5px;
 }
 
+a:hover {
+    color: #3882F6;
+}
 
-.hero {
+.hero-container {
     background-color: #1F2837;
 }
 
-nav, header, main, .main-container-left, .main-container-right {
+nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container {
     display: flex;
 }
 
@@ -46,14 +49,14 @@ header {
 
 main {
     justify-content: center;
-    margin: 9em 17em;
+    margin: 9em 17em 0em 17em;
     padding-bottom: 11.7em;
 }
 
 .main-container-left h1 {
     font-size: 63px;
     line-height: 1.1em;
-    font-weight: extra-bold;
+    font-weight: 800;
 }
 
 .main-container-left, .main-container-right {
@@ -95,3 +98,59 @@ button:hover {
 .main-container-right {
     background-color: #6c757d;
 }
+
+.info-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 10em;
+    gap: 4.1em;
+}
+
+.info-container h2 {
+    color: #1F2937;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.grid-container-large {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4.4em;
+}
+
+.grid-container-small {
+    flex-direction: column;
+    max-width: 13.6em;
+    max-height: auto;
+    text-align: center;
+    gap: 1em;
+}
+
+.grid-image-placeholder {
+    height: 13.7em;
+    border: 6px solid #3882F6;
+    border-radius: 15px;
+}
+
+.grid-container-small p {
+    font-size: 23px;
+    color: #1F2937;
+}
+
+.quote-container {
+    padding: 10.7em 28em 10em 28em;
+    flex-direction: column;
+    justify-content: center;
+    color: #1F2937;
+}
+
+.quote {
+    font-size: 48px;
+}
+
+.author {
+    margin-left: auto
+}
+
