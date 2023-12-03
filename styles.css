@@ -25,11 +25,11 @@ a:hover {
     color: #3882F6;
 }
 
-.hero-container {
+.hero-container, footer {
     background-color: #1F2837;
 }
 
-nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container, .cta-container, .cta, .cta-text {
+nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container, .cta-container, .cta, .cta-text, footer {
     display: flex;
 }
 
@@ -191,4 +191,9 @@ button:hover {
 .cta button:hover {
     color: #3882F6;
     background-color: #E5E7EB;
+}
+
+footer {
+    padding: 3em;
+    justify-content: center;;
 }
