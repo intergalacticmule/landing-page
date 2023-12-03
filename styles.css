@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #F9FAF8;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 23.5px;
+}
+
+.hero {
+    background-color: #1F2837;
+}
+
+
+
+nav, header {
+    display: flex;
+}
+
+nav {
+    gap: 2em;
+}
+
+header {
+    padding: 1.6em 17.2em;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-size: 30.5px;
+    font-weight: 900;
+    letter-spacing: 0.01px
+}
