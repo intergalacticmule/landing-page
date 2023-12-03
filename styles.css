@@ -5,11 +5,11 @@
     padding: 0;
 }
 
-header, .main-container-left h1, button {
+.logo, .main-container-left h1, button, .cta-text h3 {
     color: #F9FAF8;
 }
 
-a, .main-container-left p, .main-container-right p {
+a, .main-container-left p, .main-container-right p, .cta-text p {
     color: #E5E7EB;
 }
 
@@ -29,7 +29,7 @@ a:hover {
     background-color: #1F2837;
 }
 
-nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container {
+nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container, .cta-container, .cta, .cta-text {
     display: flex;
 }
 
@@ -131,7 +131,7 @@ button:hover {
 .grid-image-placeholder {
     height: 13.7em;
     border: 6px solid #3882F6;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .grid-container-small p {
@@ -140,10 +140,12 @@ button:hover {
 }
 
 .quote-container {
-    padding: 10.7em 28em 10em 28em;
+    padding: 10.7em 28em 8.5em 28em;
     flex-direction: column;
     justify-content: center;
     color: #1F2937;
+    gap: 0.2em;
+    background-color: #E5E7EB;
 }
 
 .quote {
@@ -151,6 +153,42 @@ button:hover {
 }
 
 .author {
-    margin-left: auto
+    margin-left: auto;
+    font-size: 29.5px;
+    font-weight: 1000;
 }
 
+.cta-container {
+    justify-content: center;
+    padding: 8.3em 0em 7.8em 8em;
+}
+
+.cta {
+    padding: 4.7em 9em;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 20.5em;
+}
+
+.cta-text {
+    flex-direction: column;
+}
+
+.cta-text h3 {
+    font-size: 27px;
+}
+
+.cta-text p {
+    font-size: 20px;
+}
+
+.cta button {
+    border: 3px solid #E5E7EB;
+}
+
+.cta button:hover {
+    color: #3882F6;
+    background-color: #E5E7EB;
+}
