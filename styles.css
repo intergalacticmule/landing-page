@@ -5,19 +5,16 @@
     padding: 0;
 }
 
-.logo, .main-container-left h1, button, .cta-text h3 {
+.white-big-text {
     color: #F9FAF8;
 }
 
-a, .main-container-left p, .main-container-right p, .cta-text p {
+.white-small-text {
     color: #E5E7EB;
 }
 
 a {
     text-decoration: none;
-}
-
-a {
     font-size: 23.5px;
 }
 
@@ -29,8 +26,24 @@ a:hover {
     background-color: #1F2837;
 }
 
-nav, header, main, .main-container-left, .main-container-right, .info-container, .grid-container-large, .grid-container-small, .quote-container, .cta-container, .cta, .cta-text, footer {
-    display: flex;
+.flex {
+    display: flex
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
 }
 
 nav {
@@ -39,7 +52,6 @@ nav {
 
 header {
     padding: 1.6em 17.2em;
-    justify-content: space-between;
 }
 
 .logo {
@@ -48,8 +60,8 @@ header {
 }
 
 main {
-    justify-content: center;
     margin: 9em 17em 0em 17em;
+    gap: 3em;
     padding-bottom: 11.7em;
 }
 
@@ -64,19 +76,12 @@ main {
 }
 
 .main-container-left {
-    flex-direction: column;
     gap: 1.5em
 }
 
 .main-container-left p {
     font-size: 24px;
 }
-
-.main-container-right {
-    justify-content: center;
-    align-items: center;
-}
-
 .main-container-right p {
     font-size: 23px;
 }
@@ -100,9 +105,6 @@ button:hover {
 }
 
 .info-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 4em;
     padding-bottom: 10em;
     gap: 4.1em;
@@ -115,13 +117,11 @@ button:hover {
 }
 
 .grid-container-large {
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 4.4em;
 }
 
 .grid-container-small {
-    flex-direction: column;
     max-width: 13.6em;
     max-height: auto;
     text-align: center;
@@ -141,8 +141,6 @@ button:hover {
 
 .quote-container {
     padding: 10.7em 28em 8.5em 28em;
-    flex-direction: column;
-    justify-content: center;
     color: #1F2937;
     gap: 0.2em;
     background-color: #E5E7EB;
@@ -159,21 +157,14 @@ button:hover {
 }
 
 .cta-container {
-    justify-content: center;
     padding: 8.3em 0em 7.8em 8em;
 }
 
 .cta {
     padding: 4.7em 9em;
     background-color: #3882F6;
-    color: #E5E7EB;
     border-radius: 10px;
-    justify-content: space-between;
     gap: 20.5em;
-}
-
-.cta-text {
-    flex-direction: column;
 }
 
 .cta-text h3 {
@@ -195,5 +186,4 @@ button:hover {
 
 footer {
     padding: 3em;
-    justify-content: center;;
 }
