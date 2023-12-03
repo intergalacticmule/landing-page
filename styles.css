@@ -5,23 +5,28 @@
     padding: 0;
 }
 
-header {
+header, .main-container-left h1, button {
     color: #F9FAF8;
+}
+
+a, .main-container-left p, .main-container-right p {
+    color: #E5E7EB;
 }
 
 a {
     text-decoration: none;
-    color: #E5E7EB;
+}
+
+a {
     font-size: 23.5px;
 }
+
 
 .hero {
     background-color: #1F2837;
 }
 
-
-
-nav, header {
+nav, header, main, .main-container-left, .main-container-right {
     display: flex;
 }
 
@@ -32,11 +37,61 @@ nav {
 header {
     padding: 1.6em 17.2em;
     justify-content: space-between;
-    
 }
 
 .logo {
-    font-size: 30.5px;
-    font-weight: 900;
-    letter-spacing: 0.01px
+    font-weight: 1000;
+    font-size: 29px;
+}
+
+main {
+    justify-content: center;
+    margin: 9em 17em;
+    padding-bottom: 11.7em;
+}
+
+.main-container-left h1 {
+    font-size: 63px;
+    line-height: 1.1em;
+    font-weight: extra-bold;
+}
+
+.main-container-left, .main-container-right {
+    flex: 1
+}
+
+.main-container-left {
+    flex-direction: column;
+    gap: 1.5em
+}
+
+.main-container-left p {
+    font-size: 24px;
+}
+
+.main-container-right {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-right p {
+    font-size: 23px;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    padding: 0.45em 1.9em;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: white;
+    color: #3882F6;
+}
+
+.main-container-right {
+    background-color: #6c757d;
 }
